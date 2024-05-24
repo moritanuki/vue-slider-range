@@ -33,10 +33,11 @@
 <style scoped>
 .title {
   text-align: center;
+  margin: 40px;
 }
 
 .slider {
   width: 500px;
-  margin: 50px;
+  margin: 40px;
 }
 </style>

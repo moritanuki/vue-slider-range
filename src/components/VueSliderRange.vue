@@ -8,26 +8,27 @@
     <Slider v-model="stepValue" :min="0" :max="100" :lazy="false" :step="50" />
   </div>
 </template>
-<script>
-  import Slider from '@vueform/slider'
+<script lang="ts">
+import { defineComponent } from 'vue';
+import Slider from '@vueform/slider';
 
-  export default {
-    components: {
-      Slider,
+export default defineComponent({
+  components: {
+    Slider,
+  },
+  data() {
+    return {
+      value: 0,
+      stepValue: 0,
+    };
+  },
+  methods: {
+    changeVolume() {
+      // 50ずつのステップ
+      this.value = Math.round(this.value / 50) * 50;
     },
-    data() {
-      return {
-        value: 0,
-        stepValue: 0,
-      }
-    },
-    methods: {
-      changeVolume() {
-        // 50ずつのステップ
-        this.value = Math.round(this.value / 50) * 50;
-      }
-    }
-  }
+  },
+});
 </script>
 <style src="@vueform/slider/themes/default.css"></style>
 <style scoped>

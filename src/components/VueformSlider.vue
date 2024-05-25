@@ -1,4 +1,4 @@
-<template class="wrapper">
+<template>
   <div class="slider">
     <p class="title">ぬるぬる動く自作step</p>
     <!-- NOTE: 本来のinput要素であれば、step値にanyを割り当てられる（小数点何桁でも受け入れ可能）が、

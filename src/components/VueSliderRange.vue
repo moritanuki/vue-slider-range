@@ -1,4 +1,4 @@
-<template class="wrapper">
+<template>
   <VueformSlider />
 </template>
 <script lang="ts">
